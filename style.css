@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  background-color: hsl(204, 43%, 93%);
+}
+
+.main {
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.price {
+  width: 475px;
+  height: 640px;
+}
+
+.price__section {
+  display: flex;
+}
+
+.join-our-community {
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+.join-our-community__subtitle {
+  color: hsl(71, 73%, 54%);
+}
+
+.monthly-subscription {
+  background-color: hsl(179, 62%, 43%);
+  padding: 40px;
+}
+
+.why-us {
+  background-color: hsl(179, 62%, 43%);
+  filter: opacity(0.5);
+  padding: 40px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
