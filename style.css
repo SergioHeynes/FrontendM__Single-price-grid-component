@@ -17,22 +17,26 @@ body {
   font-size: 16px;
   font-family: "Karla", sans-serif;
   background-color: hsl(204, 43%, 93%);
+  line-height: 1.5;
 }
 
 .main {
+  width: 100vw;
   height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header {
   display: flex;
-
-  justify-content: center;
-  align-items: center;
 }
 
 .price {
-  width: 475px;
-  height: 640px;
+  max-width: 640px;
+  box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
 }
 
 .price__section {
@@ -42,27 +46,108 @@ body {
 .join-our-community {
   background-color: #ffffff;
   padding: 40px;
+  color: hsl(218, 22%, 67%);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.join-our-community__title {
+  color: hsl(179, 62%, 43%);
+  font-size: 23px;
+  margin-bottom: 28px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .join-our-community__subtitle {
   color: hsl(71, 73%, 54%);
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
 .monthly-subscription {
   background-color: hsl(179, 62%, 43%);
   padding: 40px;
+  color: #ffffff;
+  border-bottom-left-radius: 8px;
+
+  flex: 1;
+}
+
+.monthly-subscription__title {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.monthly-subscription__price {
+  font-weight: lighter;
+}
+
+.monthly-subscription__price span {
+  font-size: 28px;
+  font-weight: 600;
+  margin-right: 12px;
+}
+
+.monthly-subscription__paragraph {
+  margin-bottom: 24px;
 }
 
 .why-us {
-  background-color: hsl(179, 62%, 43%);
-  filter: opacity(0.5);
+  background-color: #4abebd;
   padding: 40px;
+  color: #ffffff;
+  border-bottom-right-radius: 8px;
+
+  flex: 1;
+}
+
+.why-us__title {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.why-us__list {
+  list-style-type: none;
+  font-size: 13px;
+  font-weight: lighter;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.btn {
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  padding: 18px 40px;
+  color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  font-family: "Karla", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+  .price__section {
+    display: block;
+  }
+
+  .monthly-subscription {
+    border-radius: 0;
+  }
+
+  .why-us {
+    border-bottom-left-radius: 8px;
+  }
 }
